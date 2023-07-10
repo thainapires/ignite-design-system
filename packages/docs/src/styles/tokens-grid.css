@@ -1,0 +1,24 @@
+.tokens-grid {
+    width: 100%;
+    font-family: sans-serif;
+    color: #000;
+    border-collapse: collapse;
+}
+
+.tokens-grid thead th {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    background-color: grey;
+    color: white;
+}
+
+.tokens-grid tbody td {
+    padding: 0.75rem 1rem;
+    color:#515151;
+}
+
+.tokens-grid tbody tr:nth-child(even) td{
+    background: #E5E4E2;
+}
+
+
