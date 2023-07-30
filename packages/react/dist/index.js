@@ -71,9 +71,6 @@ __export(src_exports, {
 });
 module.exports = __toCommonJS(src_exports);
 
-// src/styles/index.ts
-var import_react = require("@stitches/react");
-
 // ../tokens/dist/index.mjs
 var colors = {
   white: "#FFF",
@@ -148,7 +145,17 @@ var lineHeights = {
 };
 
 // src/styles/index.ts
-var { styled, css, globalCss, keyframes, getCssText, theme, createTheme, config } = (0, import_react.createStitches)({
+var import_react = require("@stitches/react");
+var {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config
+} = (0, import_react.createStitches)({
   themeMap: __spreadProps(__spreadValues({}, import_react.defaultThemeMap), {
     height: "space",
     width: "space"
@@ -177,7 +184,7 @@ var Text = styled("p", {
   fontFamily: "$default",
   lineHeight: "$base",
   margin: 0,
-  color: "$gray800",
+  color: "$gray100",
   variants: {
     size: {
       xxs: { fontSize: "$xxs" },

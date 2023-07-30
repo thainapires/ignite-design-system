@@ -30,9 +30,6 @@ var __objRest = (source, exclude) => {
   return target;
 };
 
-// src/styles/index.ts
-import { createStitches, defaultThemeMap } from "@stitches/react";
-
 // ../tokens/dist/index.mjs
 var colors = {
   white: "#FFF",
@@ -107,7 +104,17 @@ var lineHeights = {
 };
 
 // src/styles/index.ts
-var { styled, css, globalCss, keyframes, getCssText, theme, createTheme, config } = createStitches({
+import { createStitches, defaultThemeMap } from "@stitches/react";
+var {
+  styled,
+  css,
+  globalCss,
+  keyframes,
+  getCssText,
+  theme,
+  createTheme,
+  config
+} = createStitches({
   themeMap: __spreadProps(__spreadValues({}, defaultThemeMap), {
     height: "space",
     width: "space"
@@ -136,7 +143,7 @@ var Text = styled("p", {
   fontFamily: "$default",
   lineHeight: "$base",
   margin: 0,
-  color: "$gray800",
+  color: "$gray100",
   variants: {
     size: {
       xxs: { fontSize: "$xxs" },
