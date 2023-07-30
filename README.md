@@ -1,1 +1,1 @@
-### Ignite Design System
+## Ignite Design System
