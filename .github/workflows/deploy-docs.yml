@@ -22,7 +22,7 @@ jobs:
       - run: npm run build
         env:
           TURBO_TOKEN: 8EESNtWXYfFx3UTord5nZREM
-          TURBO_TEM: thainapires
+          TURBO_TEAM: thainapires
 
       - name: Deploy storybook
         working-directory: ./packages/docs
